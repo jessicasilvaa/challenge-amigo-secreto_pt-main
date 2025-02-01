@@ -37,3 +37,8 @@ function mostrarResultado(nome) {
   const resultado = document.getElementById("resultado");
   resultado.innerHTML = `<li>O amigo secreto sorteado é: <strong>${nome}</strong></li>`;
 }
+
+document.getElementById("amigo").addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+      adicionarAmigo(); }
+});
